@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: minirest
+  datasource:
+    url: jdbc:mysql://10.147.20.20:3306/simple?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL57Dialect
+    show-sql: true
+
+logging:
+  level:
+    programacion2.minirest: debug
+    web: debug
+    org:
+      hibernate:
+        SQL: debug
